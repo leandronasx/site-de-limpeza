@@ -35,14 +35,10 @@
         </nav>
     </header>
 
-    <section class="destaque">
-
-    </section>
-    
     <section class="rjp-emblemas conteiner">
         <div>
             <h2>Emblemas RJP</h2>
-            <img src="./img/em-4.png" alt="">
+            <img src="./img/em-2.png" alt="">
         </div>
         <section class="emblemas">
             <article class="list-emblemas">
@@ -85,6 +81,38 @@
             </article>
         </section>
     </section>
+
+    <section class="destaque">
+        <section class="servicos">
+            <h2>Nossos serviços</h2>
+        </section>
+
+        <section class="depoimentos">
+            <h2>Depoimentos dos nossos clientes</h2>
+            <article class="lista-imgs-depoimentos">
+                <article class="img-depoimentos">
+                    <img src="./img/d-1.jpeg" alt="" onclick="abrirModal(this)">
+                </article>
+
+                <article class="img-depoimentos">
+                    <img src="./img/d-2.jpeg" alt="" onclick="abrirModal(this)">
+                </article>
+
+                <article class="img-depoimentos">
+                    <img src="./img/d-3.jpeg" alt="" onclick="abrirModal(this)">
+                </article>
+
+                <article class="img-depoimentos">
+                    <img src="./img/d-4.jpeg" alt="" onclick="abrirModal(this)">
+                </article>
+
+                <article class="img-depoimentos">
+                    <img src="./img/d-5.jpeg" alt="" onclick="abrirModal(this)">
+                </article>
+            </article>
+        </section>
+    </section>
+    
 
     <section class="contato">
         <article class="info">
@@ -158,6 +186,14 @@
             <span id="current_year"></span> &copy; RPJ HIGIENIZAÇÃO Todos os direitos reservados
         </p>
     </footer>
+
+    <!-- MODAL -->
+    
+    <div class="modal">
+        <span id="btn-fechar" onclick="fecharModal()"><i class="fa fa-times"></i></span>
+        <img id="imagem-modal" src="" alt="">
+        <p id="descricao"></p>
+    </div>
 
     <script src="./js/script.js"></script>
 </body>

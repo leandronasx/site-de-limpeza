@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: 'Lora', serif;
+    box-sizing: border-box;
 }
 /* GERAL */
 .conteiner{
@@ -31,13 +32,13 @@
     align-items: center;
 } 
 .header div span{
-    font-size:  1.2rem;
+    font-size:  1.4rem;
     color: #fff;
 }
 .header .logo{
     background-color: #fff;
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
     display: flex;
     justify-content: center;
@@ -119,12 +120,80 @@ header nav li:first-child{
     font-family: 'Poppins', sans-serif;
 }
 
+/* DESTAQUES */
+.destaques{
+    width: 100%;
+}
 
-/* Estilo CONTATO */
+/* SERVICOS */
+.servicos h2{
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 2.3rem;
+    color: #c8615e;
+}
+
+/* DEPOIMENTOS */
+.depoimentos{
+    width: 90%;
+    margin: auto;
+}
+.depoimentos h2{
+    text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 2.3rem;
+    color: #c8615e;
+}
+.lista-imgs-depoimentos{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+.img-depoimentos img{
+    width: 380px;
+    height: 620px;
+    display: block;
+    padding: 40px;
+    cursor: pointer;
+}
+
+/* Modal */
+.modal{
+    display: none;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    overflow: hidden;
+    background-color: rgba(45, 45, 45, .8);
+    z-index: 100;
+    padding: 20px;
+}
+#btn-fechar{
+    position: absolute;
+    cursor: pointer;
+    color: rgba(255, 0, 0, 0.63);
+    display: block;
+    top: 10px;
+    right: 50px;
+    font-size: 30px;
+    font-weight: bold;
+}
+#imagem-modal{
+    display: block;
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    max-width: 440px;
+}
+
+
+/* CONTATO */
 .contato{
     height: 500px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-evenly;
     margin-bottom: 30px;
     background-color: rgba(30, 44, 53, .8);
     align-items: center;
@@ -134,7 +203,7 @@ header nav li:first-child{
     display: flex;
     flex-direction: column;
     row-gap: 20px;
-   
+    box-shadow: 1px -1px 5px rgba(30, 44, 53, .8), -1px 1px 5px rgba(30, 44, 53, .8);
     width: 400px;
     height: 400px;
     color: #111;
@@ -157,14 +226,14 @@ header nav li:first-child{
 }
 
 .redes-sociais{
-    width: 260px;
+    width: 110px;
     margin: auto;
     display: flex;
     justify-content: space-around;
     font-size: 2.5rem;
 }
 .redes-sociais a:first-child{
-    color: #dd2a7b;
+    color: #dd2a7ba9;
 }
 .redes-sociais a:last-child{
     color: #34af23;
@@ -179,6 +248,7 @@ header nav li:first-child{
     width: 400px;
     height: 400px;
     background-color: grey; 
+    box-shadow: 1px -1px 5px rgba(30, 44, 53, .8), -1px 1px 5px rgba(30, 44, 53, .8);
 }
 
 
@@ -201,6 +271,10 @@ header nav li:first-child{
     outline: none;
     font-size: 15px;
     transition: 0.5s;
+}
+.acordeon i{
+    color: rgb(56, 182, 255);
+    font-size: .8rem;
 }
 .painel p{
     background-color: #eee;

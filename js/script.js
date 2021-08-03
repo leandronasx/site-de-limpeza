@@ -22,3 +22,15 @@ anoAtual = anoAtual.getFullYear();
 
 let data = document.getElementById("current_year");
 data.innerText = anoAtual;
+
+
+// MODAL DEPOIMENTOS
+
+function abrirModal(img){
+    document.getElementsByClassName("modal")[0].style.display = "block";
+    let src = img.src;
+    document.getElementById("imagem-modal").src = src;
+}
+function fecharModal(){
+    document.getElementsByClassName("modal")[0].style.display = "none";
+}
