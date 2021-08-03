@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RJP HIGIENIZAÇÃO</title>
+
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div>
+            <span class="logo">
+                <span class="cor">rjp</span>
+            </span>
+            <span>
+                HIGIENIZAÇÃO
+            </span>
+        </div>
+
+        <nav>
+            <ul>
+                <li><i class="fa fa-home"></i></li>
+                <li>Destaques</li>
+                <li>Emblemas</li>
+                <li>Contato</li>
+                <li>FAQ</li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="destaque">
+
+    </section>
+    
+    <section class="rjp-emblemas conteiner">
+        <div>
+            <h2>Emblemas RJP</h2>
+            <img src="./img/em-4.png" alt="">
+        </div>
+        <section class="emblemas">
+            <article class="list-emblemas">
+                <img class="img-emblema" src="./img/limpesa-de-sofa.jpg" alt="">
+                <h3>Limpeza de sofá</h3>
+            </article>
+    
+            <article class="list-emblemas">
+                <img class="img-emblema" src="./img/impermeabilizar-estofados.jpg" alt="">
+                <h3>Impermeabilização</h3>
+            </article>
+    
+            <article class="list-emblemas">
+                <img class="img-emblema" src="./img/limpeza-de-carro.jpg" alt="">
+                <h3>Limpeza de carro</h3>
+            </article>
+        </section>
+
+        <section class="text-emblemas">
+            <article class="text-list-emblemas">
+               <p>
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam, dolorum, odit accusantium distinctio non 
+                   cupiditate possimus hic, incidunt obcaecati fugit ducimus nesciunt sint voluptate maiores a at sapiente quod
+                corporis.
+               </p>
+            </article>
+    
+            <article class="text-list-emblemas">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel maxime officiis laudantium doloribus reiciendis 
+                    quos odio sit earum eius enim voluptas illo soluta obcaecati dolore ipsa, rem quaerat sint tenetur.
+                </p>
+            </article>
+    
+            <article class="text-list-emblemas">
+                <p>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Provident, quisquam adipisci! Id odit officia fugiat,
+                    inventore quasi aliquid facere voluptatibus omnis sit magnam fugit assumenda, a illo laboriosam quas veritatis?
+                </p>
+            </article>
+        </section>
+    </section>
+
+    <section class="contato">
+        <article class="info">
+            <h1>Contato</h1>
+            <h2>E-MAIL:</h2>
+            <h3>leandronasx18@gmail.com</h3>
+            <h2>TELEFONE:</h2>
+            <h3>(75) 99291-9172</h3>
+            <h2>REDES SOCIAIS:</h2>
+            <div class="redes-sociais">
+                <a href="https://www.instagram.com/leandro.nasx/" target="_blank"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.instagram.com/leandro.nasx/"><i class="fa fa-whatsapp" target="_blank"></i></a>
+            </div>
+        </article>
+
+        <article class="mapa">
+            <div class="como-chegar">
+                <div id="map"></div>
+            </div>
+
+            <script>
+                function initMap() {
+                  const uluru = { lat: -23.56783320377981, lng: -46.6481022942969 };
+                  const map = new google.maps.Map(document.getElementById("map"), {
+                    zoom: 16,
+                    center: uluru,
+                  });
+                  const marker = new google.maps.Marker({
+                    position: uluru,
+                    map: map,
+                  });
+                }
+            </script>
+
+            <script
+                src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfed7JCksmCYq2CY4ebeyP6KYhM8rk8cI&callback=initMap&libraries=&v=weekly"
+                async
+            ></script>
+        </article>
+    </section>
+
+    <section class="faq conteiner">
+        <h2>FAQ de porque HIGIENIZAR seu sofá</h2>
+        <button class="acordeon"><span><i class="fa fa-plus"></i></span> Porque fazer?</button>
+        <article class="painel">
+            <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eos ab quas, id sed, officia est blanditiis saepe
+            placeat autem ratione nostrum accusamus cum architecto minus et temporibus illo error?
+            </p>
+        </article>
+
+        <button class="acordeon"><span><i class="fa fa-plus"></i> Motivo de fazer?</button>
+        <article class="painel">
+            <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vero cupiditate tempora aperiam suscipit deserunt
+            corrupti at amet illum magni modi nisi voluptatum qui perferendis pariatur laborum, sit laudantium repellendus.
+            </p>
+        </article>
+
+        <button class="acordeon"><span><i class="fa fa-plus"></i> Beneficio de fazer?</button>
+        <article class="painel">
+            <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque perspiciatis itaque numquam unde corporis nesciunt.
+            Quaerat facere natus modi beatae consectetur reprehenderit cum dolor iusto. Ducimus, in error. Non, corrupti.
+            </p>
+        </article>
+    </section>
+
+    <footer class="footer">
+        <p>
+            <span id="current_year"></span> &copy; RPJ HIGIENIZAÇÃO Todos os direitos reservados
+        </p>
+    </footer>
+
+    <script src="./js/script.js"></script>
+</body>
+</html>

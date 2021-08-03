@@ -1,0 +1,234 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Lora', serif;
+}
+/* GERAL */
+.conteiner{
+    width: 960px;
+    margin: auto;
+}
+
+/* COR rgb(56, 182, 255) */
+
+/* HEADER */
+.header{
+    position: fixed;
+    z-index: 99;
+    padding: 20px 0;
+    width: 100%;
+    top: 0px;
+    left: 0px;
+    background-color: rgba(30, 44, 53, .8);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.header div{
+    width: 450px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} 
+.header div span{
+    font-size:  1.2rem;
+    color: #fff;
+}
+.header .logo{
+    background-color: #fff;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 10px;
+}
+.header .cor{
+    color: rgba(30, 44, 53, .8);
+    font-family: 'Comfortaa', cursive;
+    font-weight: bold;
+}
+
+.header nav ul{
+    list-style: none;
+}
+.header nav li{
+    display: inline;
+    font-size: 1.2rem;
+    color: #fee;
+    margin: 0 10px;
+}
+header nav li:first-child{
+    color: #c24e4b;
+    font-size: 2rem;
+}
+
+/* EMBLEMAS */
+.rjp-emblemas{
+    margin-top: 150px;
+    height: 550px;
+}
+.rjp-emblemas div{
+    text-align: center;
+    vertical-align: middle;
+}
+.rjp-emblemas h2{
+    font-family: 'Comfortaa', cursive;
+    font-size: 2.3rem;
+    color: #c8615e;
+    display: inline;
+    height: 100px;
+    margin-right: 30px;
+}
+.rjp-emblemas div img{
+    vertical-align: middle;
+    height: 100px;
+    width: 100px;
+    margin-top: -30px;
+}
+.emblemas{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.img-emblema{
+    margin: 50px;
+    margin-bottom: 10px;
+    display: block;
+    width: 104px;
+    height: 104px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.list-emblemas h3{
+    text-align: center;
+}
+
+.text-emblemas{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+.text-list-emblemas p{
+    width: 250px;
+    text-align: justify;
+    font-weight: 400;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+/* Estilo CONTATO */
+.contato{
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+    background-color: rgba(30, 44, 53, .8);
+    align-items: center;
+}
+.info{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+   
+    width: 400px;
+    height: 400px;
+    color: #111;
+    background-color: #fef;
+}
+.info h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+    margin-top: 10px;
+}
+.info h2{
+    color: #444;
+    text-shadow: 1px -1px 10px #eee, -1px 1px 10px #eee;
+    font-size: 1.2rem;
+    font-weight: 400;
+    padding: 5px;
+}
+.info h3{
+    padding: 5px;
+}
+
+.redes-sociais{
+    width: 260px;
+    margin: auto;
+    display: flex;
+    justify-content: space-around;
+    font-size: 2.5rem;
+}
+.redes-sociais a:first-child{
+    color: #dd2a7b;
+}
+.redes-sociais a:last-child{
+    color: #34af23;
+}
+
+/* COMO CHEGAR */
+.mapa{
+    width: 400px;
+    height: 400px;
+}
+#map {
+    width: 400px;
+    height: 400px;
+    background-color: grey; 
+}
+
+
+/* FAQ */
+.faq{
+    padding: 0 10px;
+}
+.faq h2{
+    margin-bottom: 20px;
+    text-align: center;
+}
+.acordeon{
+    display: inline-block;
+    color: #111;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: 1px solid #5555;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.5s;
+}
+.painel p{
+    background-color: #eee;
+    padding: 20px;
+    border-right: 1px solid rgba(56, 182, 255, .4);
+    border-left: 1px solid rgba(56, 182, 255, .4);
+    border-bottom: 1px solid rgba(56, 182, 255, .4);
+}
+.painel{
+    max-height: 0px;
+    overflow: hidden;
+    transition: max-height 0.3s ease-out;
+    margin-bottom: 5px;
+}
+.selecionado, .acordeon:hover{
+    background-color: rgba(56, 182, 255, .4);
+}
+
+/* FOOTER */
+.footer{
+    margin-top: 30px;
+    padding: 20px;
+    background-color: rgba(30, 44, 53, .8);
+}
+.footer p, .footer span{
+    font-size: 1.2rem;
+    font-weight: bold;
+    text-align: center;
+    color: #ffe;
+}
+
