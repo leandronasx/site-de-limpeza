@@ -126,11 +126,26 @@ header nav li:first-child{
 }
 
 /* SERVICOS */
+.servicos {
+    padding: 20px;
+    background-color: rgba(30, 44, 53, .8);
+}
 .servicos h2{
     text-align: center;
     font-family: 'Comfortaa', cursive;
     font-size: 2.3rem;
-    color: #c8615e;
+    color: #ffe;
+    margin-bottom: 40px;
+    margin-top: 30px;
+}
+.videos-servicos{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+.videos-servicos video{
+    height: 450px;
+    box-shadow: 1px -1px 5px rgba(30, 44, 53, .8), -1px 1px 5px rgba(30, 44, 53, .8);
 }
 
 /* DEPOIMENTOS */
@@ -143,6 +158,8 @@ header nav li:first-child{
     font-family: 'Comfortaa', cursive;
     font-size: 2.3rem;
     color: #c8615e;
+    margin-bottom: 30px;
+    margin-top: 40px;
 }
 .lista-imgs-depoimentos{
     display: grid;
@@ -257,8 +274,12 @@ header nav li:first-child{
     padding: 0 10px;
 }
 .faq h2{
-    margin-bottom: 20px;
     text-align: center;
+    font-family: 'Comfortaa', cursive;
+    font-size: 2.3rem;
+    color: #c8615e;
+    margin-bottom: 30px;
+    margin-top: 40px;
 }
 .acordeon{
     display: inline-block;
