@@ -46,16 +46,17 @@
 
         <nav>
             <ul>
-                <li><i class="fa fa-home"></i></li>
-                <li>Destaques</li>
-                <li>Emblemas</li>
-                <li>Contato</li>
-                <li>FAQ</li>
+                <li><a href="#"><i class="fa fa-home home"></i></a></li>
+                <li><a href="#emblemas">Emblemas</a></li>
+                <li><a href="#destaque">Serviços</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#contato">Contato</a></li>
+                <li><a href="#faq">FAQ</a></li>
             </ul>
         </nav>
     </header>
 
-    <section class="rjp-emblemas conteiner">
+    <section id="emblemas" class="rjp-emblemas conteiner">
         <div>
             <h2>Emblemas RJP</h2>
             <img src="./img/em-2.png" alt="">
@@ -102,21 +103,21 @@
         </section>
     </section>
 
-    <section class="destaque">
+    <section id="destaque" class="destaque">
         <section class="servicos">
             <h2>Nossos serviços</h2>
             <article class="videos-servicos conteiner">
                 <article>
-                    <video src="./img/video/v-1.mp4" autoplay muted loop></video>
+                    <video src="./img/video/v-1.mp4" autoplay muted loop onclick="abrirVideo(this)"></video>
                 </article>
 
                 <article>
-                    <video src="./img/video/v-2.mp4" autoplay muted loop></video>
+                    <video src="./img/video/v-2.mp4" autoplay muted loop onclick="abrirVideo(this)"></video>
                 </article>
             </article>
         </section>
 
-        <section class="depoimentos">
+        <section id="depoimentos" class="depoimentos">
             <h2>Depoimentos dos nossos clientes</h2>
             <article class="lista-imgs-depoimentos">
                 <article class="img-depoimentos">
@@ -143,7 +144,7 @@
     </section>
     
 
-    <section class="contato">
+    <section id="contato" class="contato">
         <article class="info">
             <h1>Contato</h1>
             <h2>E-MAIL:</h2>
@@ -183,7 +184,7 @@
         </article>
     </section>
 
-    <section class="faq conteiner">
+    <section id="faq" class="faq conteiner">
         <h2>FAQ de porque HIGIENIZAR seu sofá</h2>
         <button class="acordeon"><span><i class="fa fa-plus"></i></span> Porque fazer?</button>
         <article class="painel">
@@ -221,7 +222,11 @@
     <div class="modal">
         <span id="btn-fechar" onclick="fecharModal()"><i class="fa fa-times"></i></span>
         <img id="imagem-modal" src="" alt="">
-        <p id="descricao"></p>
+    </div>
+
+    <div class="modal-video">
+        <span id="btn-fechar-video" onclick="fecharVideo()"><i class="fa fa-times"></i></span>
+        <video  id="video-modal" src="" autoplay controls></video>
     </div>
 
     <script src="./js/script.js"></script>

@@ -40,3 +40,15 @@ function abrirModal(img){
 function fecharModal(){
     document.getElementsByClassName("modal")[0].style.display = "none";
 }
+
+// MODAL VIDEOS
+
+function abrirVideo(video){
+    document.getElementsByClassName("modal-video")[0].style.display = "block";
+    let src = video.src;
+    document.getElementById("video-modal").src = src;
+}
+function fecharVideo(){
+    document.getElementsByClassName("modal-video")[0].style.display = "none";
+    document.getElementById("video-modal").src = "";
+}
