@@ -5,14 +5,19 @@
     box-sizing: border-box;
 }
 /* GERAL */
+body{
+    background-color: #fff;
+}
 .call-action{
     padding: 20px 30px;
     background-color: rgb(32, 189, 50);
     color: #ffe;
     text-decoration: none;
     font-weight: bold;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     border-radius: 35px;
+    text-shadow: 1px -1px 5px rgba(242, 242, 242, .1), -1px 1px 5px rgba(242, 242, 242, .1);
+    box-shadow: 1px -1px 5px rgba(56, 182, 255, .8), -1px 1px 5px rgba(56, 182, 255, .8);
 }
 .section-button{
     display: flex;
@@ -87,7 +92,7 @@
     align-items: center;
 } 
 .header div span{
-    font-size:  1.4rem;
+    font-size:  1.3rem;
     color: #fff;
 }
 .header .logo{
@@ -101,6 +106,7 @@
     margin-right: 10px;
 }
 .header .cor{
+    font-size: 1.6rem;
     color: #ffe;
     font-family: 'Comfortaa', cursive;
     font-weight: bold;
@@ -116,6 +122,10 @@
     margin: 0 10px;
     text-decoration: none;
 }
+.header nav li a:hover{
+    color: rgb(56, 182, 255);
+    transform: scale(1.2);
+}
 .header .home{
     color: rgb(56, 182, 255);
     font-size: 2rem;
@@ -123,13 +133,14 @@
 
 /* EMBLEMAS */
 .rjp-emblemas{
-    margin-top: 150px;
+    margin-top: 125px;
     min-height: 550px;
-    margin-bottom: 30px;
+    margin-bottom: -25px;
 }
 .rjp-emblemas div{
     text-align: center;
     vertical-align: middle;
+    margin-bottom: -20px;
 }
 .rjp-emblemas h2{
     font-family: 'Comfortaa', cursive;
@@ -149,7 +160,7 @@
 .emblemas{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 30px;
+    margin-bottom: 15px;
 }
 
 .img-emblema{
@@ -170,7 +181,7 @@
 .text-emblemas{
     display: flex;
     justify-content: space-between;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 .text-list-emblemas p{
     width: 250px;
@@ -191,8 +202,7 @@
 }
 .servicos h2{
     text-align: center;
-    margin-bottom: 40px;
-    margin-top: 30px;
+    margin-bottom: 20px;
     font-family: 'Comfortaa', cursive;
     font-size: 2.3rem;
     font-weight: bold;
@@ -201,7 +211,7 @@
 .videos-servicos{
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
 }
 .videos-servicos video{
     cursor: pointer;
@@ -218,8 +228,7 @@
     text-align: center;
     font-family: 'Comfortaa', cursive;
     font-size: 2.3rem;
-    margin-bottom: 30px;
-    margin-top: 40px;
+    margin-top: 20px;
     font-weight: bold;
     color: #000;
 }
@@ -231,7 +240,7 @@
     width: 380px;
     height: 620px;
     display: block;
-    padding: 40px;
+    padding: 20px;
     cursor: pointer;
 }
 
@@ -309,15 +318,15 @@
 .contato-layout{
     display: flex;
     justify-content: space-evenly;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     align-items: center;
 }
 .contato > h2{
     text-align: center;
     font-family: 'Comfortaa', cursive;
     font-size: 2.3rem;
-    margin-bottom: 30px;
-    padding-top: 40px;
+    margin-bottom: 20px;
+    padding-top: 20px;
     font-weight: bold;
     color: #000;
 }
@@ -367,8 +376,8 @@
     font-family: 'Comfortaa', cursive;
     font-size: 2.3rem;
     color: rgb(56, 182, 255);
-    margin-bottom: 30px;
-    margin-top: 40px;
+    margin-bottom: 20px;
+    margin-top: 20px;
     font-weight: bold;
     color: #000;
 }
@@ -444,7 +453,7 @@
     text-decoration: none;
 }
 .footer-col a:hover{
-	color: #f9014d;
+	color: rgb(56, 182, 255);
 	transition: all .4s ease-in-out;
 }
 
