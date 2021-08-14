@@ -5,6 +5,43 @@
     box-sizing: border-box;
 }
 /* GERAL */
+.whatsapp {
+    position: fixed;
+    right: 7px;
+    bottom: 60px;
+    width: 82px;
+    height: 80px;
+    border: none;
+    box-shadow: 0 0 0 0 rgb(0 183 62 / 70%);
+    border-radius: 50%;
+    background-color: #00B73E;
+    background-size: cover;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    -webkit-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -moz-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    -ms-animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation: pulse 1.25s infinite cubic-bezier(0.66, 0, 0, 1);
+    animation-duration: 1.25s;
+    animation-timing-function: cubic-bezier(0.66, 0, 0, 1);
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-fill-mode: none;
+    animation-play-state: running;
+    animation-name: pulse;
+    z-index: 1;
+}
+.whatsapp i{
+	color: #fff;
+	font-size: 42px;
+    background-color: #00B73E;
+}
+@-webkit-keyframes pulse {to {box-shadow: 0 0 0 30px rgba(0, 183, 62, 0);}}
+@-moz-keyframes pulse {to {box-shadow: 0 0 0 30px rgba(0, 183, 62, 0);}}
+@-ms-keyframes pulse {to {box-shadow: 0 0 0 30px rgba(0, 183, 62, 0);}}
+@keyframes pulse {to {box-shadow: 0 0 0 30px rgba(0, 183, 62, 0);}}/* End custom CSS */
+
 body{
     background-color: #fff;
 }
@@ -27,9 +64,6 @@ body{
     width: 960px;
     margin: auto;
 }
-
-/* rgb(56, 182, 255) */
-/* rgba(30, 44, 53, .8) */
 
 /* HEADER */
 .header{
@@ -91,62 +125,63 @@ body{
 }
 
 /* EMBLEMAS */
-.rjp-emblemas{
-    margin-top: 125px;
-    min-height: 550px;
-    margin-bottom: -25px;
-}
-.rjp-emblemas div{
+.servicos-rjp{
+    margin-top: 110px;
     text-align: center;
-    vertical-align: middle;
-    margin-bottom: -20px;
+    margin-bottom: 30px;
 }
-.rjp-emblemas h2{
+.servicos-rjp h2{
     font-family: 'Comfortaa', cursive;
     font-size: 2.3rem;
     font-weight: bold;
     color: #000;
-    display: inline;
-    min-height: 100px;
-    margin-right: 30px;
-}
-.rjp-emblemas div img{
-    vertical-align: middle;
-    min-height: 100px;
-    width: 100px;
-    margin-top: -30px;
-}
-.emblemas{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
 }
 
-.img-emblema{
-    margin: 50px;
-    margin-bottom: 10px;
-    display: block;
-    width: 104px;
-    min-height: 104px;
+.secao-cards{
+   display: flex;
+   justify-content: space-evenly;
+   margin-bottom: 30px;
+}
+.list-card{
+    width: 320px;
+    height: 380px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(45, 45, 45, .8);
+}
+.list-card .img-card{
+    width: 100%;
+    height: 50%;
     object-fit: cover;
-    border-radius: 50%;
+    margin-bottom: 10px;
 }
-
-.list-emblemas h3{
+.text-card h3{
     text-align: center;
+    color: #000;
+    margin-bottom: 10px;
+}
+.text-card p{
+    width: 90%;
+    margin: auto;
+    text-align: justify;
+    font-family: 'Poppins', sans-serif;
+    text-indent: 25px;
     color: #333;
 }
-
-.text-emblemas{
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 20px;
-}
-.text-list-emblemas p{
-    width: 250px;
-    text-align: justify;
+.saiba-mais{
+    margin: auto;
+    margin-top: 10px;
+    display: block;
+    width: 150px;
+    padding: 10px 20px;
+    background-color: rgb(70, 150, 255);
+    color: #fff;
+    text-decoration: none;
     font-weight: 400;
-    font-family: 'Poppins', sans-serif;
+    font-size: 1.2rem;
+    border-radius: 21px;
+    box-shadow: 1px -1px 5px rgba(242, 242, 242, .1), -1px 1px 5px rgba(242, 242, 242, .1);
 }
 
 /* DESTAQUES */
@@ -375,6 +410,7 @@ body{
     width: 100%;
     margin-top: 30px;
     padding: 20px;
+    padding-bottom: 50px;
     background-color: #181818;
 }
 .footer p, .footer span{
@@ -458,6 +494,8 @@ body{
 @media (max-width: 600px) {
     .conteiner{
         width: 100%;
+        margin: auto;
+        padding: 0;
     }
 
     .header{
@@ -473,7 +511,7 @@ body{
     }
     .menu-mobile{
         display: block;
-        width: 90%;
+        width: 100%;
         height: auto;
         max-width: 350px;
         max-height: 150px;
@@ -490,6 +528,7 @@ body{
         margin: 0px;
         text-decoration: none;
         padding: 0px 2px;
+        text-shadow: -1px 1px 5px rgba(242, 242, 242, .1), 1px -1px 5px rgba(242, 242, 242, .1);
     }
     .header nav li a:hover{
         color: #fff;
@@ -500,76 +539,43 @@ body{
 
 
     /*  */
-
-
-    .rjp-emblemas{
-        margin-top: 60px;
-        min-height: 550px;
+    .servicos-rjp{
+        margin: 0px;
     }
-    .rjp-emblemas div{
-        width: 100%;
-        text-align: center;
-        vertical-align: middle;
-        margin-bottom: 20px;
-    }
-    .rjp-emblemas h2{
-        width: 100%;
+    .servicos-rjp h2{
         font-family: 'Comfortaa', cursive;
-        font-size: 2rem;
+        font-size: 2.3rem;
         font-weight: bold;
-        color: #000;
-        display: inline;
-        min-height: 100px;
-        margin-right: 30px;
-    }
-    .rjp-emblemas div img{
-        vertical-align: middle;
-        min-height: 100px;
-        max-height: 100px;
-        width: 100px;
-        margin-top: -30px;
-    }
-    .emblemas{
-        flex-direction: column;
-        margin-bottom: 15px;
+        background-color: rgb(56, 182, 255);
+        color: #fff;
+        padding-bottom: 30px;
     }
     
-    .img-emblema{
-        margin: 10px auto;
-        display: block;
-        width: 104px;
-        min-height: 104px;
-        object-fit: cover;
-        border-radius: 50%;
+    .secao-cards{
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+       margin: 0px;
+       margin-bottom: 20px;
     }
-    .text-list-emblemas p{
-        margin-top: 10px;
-        margin-bottom: 10px;
-        width: 100%;
-        padding: 0 20px;
-        text-align: justify;
-        font-weight: 400;
-        font-family: 'Poppins', sans-serif;
+    .list-card{
+        margin: 0px;
+        margin-bottom: 20px;
     }
-    .text-emblemas{
-       display: none;
-    }
-
     /*  */
 
     .servicos {
         background-color: #fff;
         padding: 0px;
-        margin-top: 60px;
+        margin-top: 30px;
     }
     .servicos h2{
-        width: 100%;
-        padding: 20px 0px;
+        padding: 15% 0px;
+        font-size: 1.5rem;
         background-color: rgba(70, 150, 255);
         text-align: center;
         margin-bottom: 30px;
         font-family: 'Comfortaa', cursive;
-        font-size: 2.3rem;
         font-weight: bold;
         color: #fff;
     }
@@ -591,13 +597,13 @@ body{
         margin: auto;
     }
     .depoimentos h2{
+        padding: 15% 0px;
+        font-size: 1.5rem;
         text-align: center;
         font-family: 'Comfortaa', cursive;
-        font-size: 2.3rem;
         margin-top: 20px;
         font-weight: bold;
         color: #fff;
-        padding: 20px 0px;
         background-color: rgba(70, 150, 255);
         margin-bottom: 30px;
     }
@@ -613,10 +619,10 @@ body{
         padding: 0px;
     }
     .img-depoimentos img{
-        width: 100%;
-        max-width: 380px;
-        max-height: 500px;
+        width: 90%;
         height: auto;
+        max-width: 340px;
+        max-height: 450px;
         display: block;
         padding: 0px;
         margin: 0px;
@@ -638,11 +644,11 @@ body{
         align-items: center;
     }
     .contato > h2{
+        padding: 15% 0px;
+        font-size: 1.5rem;
         text-align: center;
         font-family: 'Comfortaa', cursive;
-        font-size: 2.3rem;
         margin-bottom: 20px;
-        padding: 20px 0px;
         font-weight: bold;
         color: #fff;
         background-color: rgb(70, 150, 255);
@@ -692,15 +698,16 @@ body{
         padding: 0px 10px;
     }
     .faq h2{
+        padding: 15% 0px;
+        font-size: 1.5rem;
+        width: 100%;
         text-align: center;
         font-family: 'Comfortaa', cursive;
-        font-size: 2.3rem;
         background-color: rgb(70, 150, 255);
         margin-bottom: 20px;
         margin-top: 20px;
         font-weight: bold;
         color: #fff;
-        padding: 20px 0;
     }
    
     /*  */
@@ -709,7 +716,6 @@ body{
         float: left;
         width: 100%;
         margin-top: 30px;
-        padding: 20px;
         background-color: #181818;
     }
     .footer p, .footer span{
@@ -782,5 +788,17 @@ body{
         border-top: 1px solid #fff;
         padding-top: 20px;
         color: gray;
+    }
+}
+
+@media (max-width: 411px) {
+    .rjp-emblemas div img{
+        display: none;
+    }
+}
+@media (max-width: 378px) {
+    header nav li, .header nav li a{
+        font-size: .8rem;
+        font-weight: 400;
     }
 }
