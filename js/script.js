@@ -52,3 +52,9 @@ function fecharVideo(){
     document.getElementsByClassName("modal-video")[0].style.display = "none";
     document.getElementById("video-modal").src = "";
 }
+
+// Solicitar orçamento
+
+function orcamento(){
+    window.open("https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5521980178207%26text%3DOl%25C3%25A1%252C%2Bgostaria%2Bde%2Bfazer%2Bum%2Bor%25C3%25A7amento.&e=ATNDiZbG-4w-dJ-bty5GoOFqumm3M1R0vWRQQ_HTni5ezuoUZMadOHOyQlwVvXqFQpd_iwqTVEIOQXrJzUTlBEA&s=1");
+}
