@@ -166,7 +166,7 @@ body{
 .text-card p{
     width: 90%;
     margin: auto;
-    text-align: justify;
+    text-align: center;
     font-family: 'Poppins', sans-serif;
     text-indent: 25px;
     color: #333;
@@ -400,7 +400,7 @@ body{
     transition: max-height 0.3s ease-out;
     margin-bottom: 5px;
 }
-.selecionado, .acordeon:hover{
+.selecionado{
     background-color: rgba(56, 182, 255, .4);
 }
 

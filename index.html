@@ -67,13 +67,27 @@
                     <h3>Limpeza de sofá</h3>
 
                     <p>
+                        Lavagem Completa e Detalhada para Eliminação de Ácaros, Sujeiras e Odores do seu Sofá
+                    </p>
+                 </article>
+
+                 <a href="" class="saiba-mais">Saiba mais</a>
+            </article>
+
+    
+            <article class="list-card">
+                <img class="img-card" src="./img/limpeza-colchao.jpg" alt="">
+
+                <article class="text-card">
+                    <h3>Limpeza de Colchão</h3>
+                    <p>
                         Lavagem Completa e Detalhada para Eliminação de Ácaros, Sujeiras e Odores do seu Colchão
                     </p>
                  </article>
 
                  <a href="" class="saiba-mais">Saiba mais</a>
             </article>
-    
+
             <article class="list-card">
                 <img class="img-card" src="./img/impermeabilizar-estofados.jpg" alt="">
 
@@ -81,20 +95,7 @@
                     <h3>Impermeabilização</h3>
 
                     <p>
-                        Lavagem Completa e Detalhada para Eliminação de Ácaros, Sujeiras e Odores do seu Colchão
-                    </p>
-                 </article>
-
-                 <a href="" class="saiba-mais">Saiba mais</a>
-            </article>
-    
-            <article class="list-card">
-                <img class="img-card" src="./img/limpeza-de-carro.jpg" alt="">
-
-                <article class="text-card">
-                    <h3>Limpeza de carro</h3>
-                    <p>
-                        Lavagem Completa e Detalhada para Eliminação de Ácaros, Sujeiras e Odores do seu Colchão
+                        Impermeabilização de Estofados em Geral Não Deixe Líquidos Sujar seu Estofado
                     </p>
                  </article>
 
@@ -146,47 +147,41 @@
             <article class="info">
                 <div>
                     <h2>Local:</h2>
-                    <h3>Rua Machado Das Graças, 129</h3>
-                    <h3>Bairro Bebedouro</h3>
-                    <h3>São Paulo - SP</h3>
+                    <h3>Avenida Engenheiro Souza Filho, 705</h3>
+                    <h3>Itanhangá</h3>
+                    <h3>Rio De Janeiro - RJ</h3>
                 </div>
                 <div>
                     <h2>Contato:</h2>
-                    <h3>(21) 99201-9012</h3>
-                    <h3>rjp.higienizacao@gmail.com</h3>
+                    <h3>(21) 98017-8207</h3>
+                    <h3>higienizacaorjp@gmail.com</h3>
                 </div>
                 <div>
                     <h2>Horários:</h2>
-                    <h3>Seg-Sex: 08:00 - 23:00</h3>
-                    <h3> Sábado: 08:00 - 12:30</h3>
+                    <h3>Seg-Sáb: 08:00 - 18:00</h3>
+                    <h3>Domingo: Fechado</h3>
                 </div>
             </article>
     
             <article>
-                <div>
-                    <div id="map"></div>
-                </div>
-    
+                <div id="map"></div>
+                
                 <script>
+                    let map;
+
                     function initMap() {
-                      const uluru = { lat: -23.56783320377981, lng: -46.6481022942969 };
-                      const map = new google.maps.Map(document.getElementById("map"), {
+                    map = new google.maps.Map(document.getElementById("map"), {
+                        center: { lat: -22.988454436625453, lng: -43.32446289354868 },
                         zoom: 16,
-                        center: uluru,
-                      });
-                      const marker = new google.maps.Marker({
-                        position: uluru,
-                        map: map,
-                      });
+                    });
                     }
                 </script>
-    
                 <script
                     src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBfed7JCksmCYq2CY4ebeyP6KYhM8rk8cI&callback=initMap&libraries=&v=weekly"
                     async
                 ></script>
+                
             </article>
-        </div>
     </section>
 
     <section id="faq" class="faq conteiner">
@@ -195,24 +190,21 @@
             <button class="acordeon"><span><i class="fas fa-plus"></i></span> Porque fazer?</button>
         <article class="painel">
             <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eos ab quas, id sed, officia est blanditiis saepe
-            placeat autem ratione nostrum accusamus cum architecto minus et temporibus illo error?
+                Aumenta  a vida útil do seu estofado.
             </p>
         </article>
 
         <button class="acordeon"><span><i class="fas fa-plus"></i> Motivo de fazer?</button>
         <article class="painel">
             <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores vero cupiditate tempora aperiam suscipit deserunt
-            corrupti at amet illum magni modi nisi voluptatum qui perferendis pariatur laborum, sit laudantium repellendus.
+                Remove bactérias, fungos e ácaros.
             </p>
         </article>
 
         <button class="acordeon"><span><i class="fas fa-plus"></i> Beneficio de fazer?</button>
         <article class="painel">
             <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque perspiciatis itaque numquam unde corporis nesciunt.
-            Quaerat facere natus modi beatae consectetur reprehenderit cum dolor iusto. Ducimus, in error. Non, corrupti.
+                Ajuda a prevenir o agravamento de doenças respiratorias.
             </p>
         </article>
 
@@ -227,15 +219,17 @@
 
 			<div class="footer-col">
 				<h1>Sobre:</h1>
-				<p>Nunc lacinia ante nunc ac lobortis. Interdum adipiscing gravida odio porttitor sem non mi integer non faucibus ornare mi ut ante amet placerat aliquet. Volutpat eu sed ante lacinia sapien lorem accumsan varius montes viverra nibh in adipiscing. Lorem ipsum dolor vestibulum ante ipsum primis in faucibus vestibulum. Blandit adipiscing eu felis iaculis volutpat ac adipiscing sed feugiat eu faucibus. Integer ac sed amet praesent. Nunc lacinia ante nunc ac gravida.
+				<p>
+                    Somos uma empresa que tem a missão de levar a cada lar o sentimento, a segurança e o conforto de sentar em um sofá limpo e higienizado, 
+                    longe e livre de fungos, bactérias e qualquer outro tipo de micróbios.
 				</p>
 			</div>
 		
 			<div class="footer-col">
 				<h1>Social:</h1>
 				<ul class="footer-col-social">
-					<li><a href="#"><i class="fab fa-whatsapp"></i> Whatsapp</a></li>
-					<li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+					<li><a href="https://l.instagram.com/?u=https%3A%2F%2Fapi.whatsapp.com%2Fsend%3Fphone%3D5521980178207%26text%3DOl%25C3%25A1%252C%2Bgostaria%2Bde%2Bfazer%2Bum%2Bor%25C3%25A7amento.&e=ATNDiZbG-4w-dJ-bty5GoOFqumm3M1R0vWRQQ_HTni5ezuoUZMadOHOyQlwVvXqFQpd_iwqTVEIOQXrJzUTlBEA&s=1" target="_blank"><i class="fab fa-whatsapp"></i> Whatsapp</a></li>
+					<li><a href="https://www.instagram.com/rjp_higienizacao/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
 					<li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
 				</ul>
 			</div>
