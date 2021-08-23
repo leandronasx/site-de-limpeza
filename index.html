@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RJP HIGIENIZAÇÃO</title>
 
+    <link rel="shortcut icon" href="./img/icon.png" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600&display=swap" rel="stylesheet">
@@ -123,6 +124,24 @@
         </section>
 
         <section id="depoimentos" class="depoimentos">
+            <h2>Nossos serviços Antes / Depois</h2>
+            <article class="lista-imgs-depoimentos">
+                <article class="img-depoimentos">
+                    <img src="./img/antes-depois-1.png" alt="" onclick="abrirModal(this)">
+                </article>
+
+                <article class="img-depoimentos">
+                    <img src="./img/antes-depois-2.png" alt="" onclick="abrirModal(this)">
+                </article>
+
+                <article class="img-depoimentos">
+                    <img src="./img/antes-depois-3.png" alt="" onclick="abrirModal(this)">
+                </article>
+            </article>
+        </section>
+
+
+        <section id="depoimentos" class="depoimentos">
             <h2>Depoimentos dos nossos clientes</h2>
             <article class="lista-imgs-depoimentos">
                 <article class="img-depoimentos">
@@ -138,6 +157,7 @@
                 </article>
             </article>
         </section>
+
     </section>
     
 
@@ -172,7 +192,7 @@
                     function initMap() {
                     map = new google.maps.Map(document.getElementById("map"), {
                         center: { lat: -22.988454436625453, lng: -43.32446289354868 },
-                        zoom: 12,
+                        zoom: 13,
                     });
                     }
                 </script>

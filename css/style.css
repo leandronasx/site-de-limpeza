@@ -443,11 +443,6 @@ body{
 	color: #eee;
     text-decoration: none;
 }
-.footer-col a:hover{
-	color: rgb(56, 182, 255);
-	transition: all .4s ease-in-out;
-}
-
 .footer-col p{
 	text-align: justify;
 }
@@ -492,6 +487,16 @@ body{
 
 /* BREAK POINTS */
 @media (max-width: 600px) {
+    *{
+        /* pointer-events: none; */
+        pointer-events: auto;
+        -webkit-appearance: none;
+        touch-action: manipulation;
+        /* contain: paint; */
+    }
+    #btn-fechar i{
+        color: rgb(255, 0, 0);
+    }
     .conteiner{
         width: 100%;
         margin: auto;
@@ -750,10 +755,6 @@ body{
     .footer-col a, i{
         color: #eee;
         text-decoration: none;
-    }
-    .footer-col a:hover{
-        color: rgb(56, 182, 255);
-        transition: all .4s ease-in-out;
     }
     
     .footer-col p{
