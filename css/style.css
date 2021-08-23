@@ -795,8 +795,15 @@ body{
     }
 }
 @media (max-width: 408px) {
+    *{
+        /* pointer-events: none; */
+        pointer-events: auto;
+        -webkit-appearance: none;
+        touch-action: manipulation;
+        /* contain: paint; */
+    }
     header nav li, .header nav li a{
-        font-size: .8rem;
+        font-size: .9rem;
         font-weight: 400;
     }
 }
