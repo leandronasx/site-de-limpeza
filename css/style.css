@@ -488,11 +488,9 @@ body{
 /* BREAK POINTS */
 @media (max-width: 600px) {
     *{
-        /* pointer-events: none; */
         pointer-events: auto;
         -webkit-appearance: none;
         touch-action: manipulation;
-        /* contain: paint; */
     }
     #btn-fechar i{
         color: rgb(255, 0, 0);
@@ -780,7 +778,7 @@ body{
     .fa-instagram{
         background: linear-gradient(to bottom, #515bd4, #8134af, #dd2a7ba9);
     }
-    .fa-whatsapp{
+    .footer-col-social .fa-whatsapp{
         background-color: #34af23;
     }
     .fa-facebook{
@@ -796,11 +794,9 @@ body{
 }
 @media (max-width: 408px) {
     *{
-        /* pointer-events: none; */
         pointer-events: auto;
         -webkit-appearance: none;
         touch-action: manipulation;
-        /* contain: paint; */
     }
     header nav li, .header nav li a{
         font-size: .9rem;
