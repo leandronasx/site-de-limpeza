@@ -31,6 +31,7 @@
     animation-play-state: running;
     animation-name: pulse;
     z-index: 1;
+    color: #fff;
 }
 .whatsapp i{
 	color: #fff;
@@ -463,13 +464,13 @@ body{
 	text-align: center;
 	border-radius: 5px;
 }
-.fa-instagram{
+.footer-col-social .fa-instagram{
     background: linear-gradient(to bottom, #515bd4, #8134af, #dd2a7ba9);
 }
-.fa-whatsapp{
+.footer-col-social .fa-whatsapp{
     background-color: #34af23;
 }
-.fa-facebook{
+.footer-col-social .fa-facebook{
     background-color: #3b5998;
 }
 .footer-autorais{
@@ -775,13 +776,13 @@ body{
         text-align: center;
         border-radius: 5px;
     }
-    .fa-instagram{
+    .footer-col-social .fa-instagram{
         background: linear-gradient(to bottom, #515bd4, #8134af, #dd2a7ba9);
     }
     .footer-col-social .fa-whatsapp{
         background-color: #34af23;
     }
-    .fa-facebook{
+    .footer-col-social .fa-facebook{
         background-color: #3b5998;
     }
     .footer-autorais{
